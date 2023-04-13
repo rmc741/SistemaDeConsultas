@@ -9,26 +9,20 @@ namespace SistemaConsulta.Controllers;
 public class UsuarioController : ControllerBase
 {
     private readonly IUsuarioRepository _usuarioRepository;
-    List<Usuario> usuarios = new List<Usuario>();
     public UsuarioController(IUsuarioRepository usuarioRepository)
     {
-        usuarios.Add(new Usuario(1 , "User 1", "email" , "senha" , "situacao"));
-        usuarios.Add(new Usuario(2, "User 2", "email", "senha", "situacao"));
-        usuarios.Add(new Usuario(3, "User 3", "email", "senha", "situacao"));
-        usuarios.Add(new Usuario(4, "User 4", "email", "senha", "situacao"));
         _usuarioRepository = usuarioRepository;
     }
 
     [HttpGet]
-    public IActionResult Get()
+    public async Task<IActionResult> Get()
     {
-        return Ok(usuarios);
+        return Ok(await _usuarioRepository.GetUsuarios());
     }
 
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {
-        var usuarioById = usuarios.FirstOrDefault(u => u.Id == id);
-        return usuarioById != null ? Ok(usuarioById) : BadRequest("Não achei o usuario!");
+        return Ok();
     }
 }

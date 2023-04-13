@@ -343,7 +343,6 @@ C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\System.Composition.Runtime.dll
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\System.Composition.TypedParts.dll
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
@@ -540,3 +539,9 @@ C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\obj\Debug\
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\obj\Debug\net6.0\SistemaConsulta.pdb
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\obj\Debug\net6.0\SistemaConsulta.genruntimeconfig.cache
 C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\obj\Debug\net6.0\ref\SistemaConsulta.dll
+C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Rafael\Desktop\Estudos\C#\SistemaDeConsultas\SistemaConsulta\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

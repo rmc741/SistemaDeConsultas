@@ -5,13 +5,17 @@ namespace SistemaConsulta.Data
 {
     public class SistemaConsultaContext : DbContext
     {
-        public SistemaConsultaContext (DbContextOptions<SistemaConsultaContext> options)
+        public SistemaConsultaContext(DbContextOptions<SistemaConsultaContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Usuario> Usuario { get; set; } = default!;
+        public DbSet<Usuario> Usuarios { get; set; }
 
-        public DbSet<SistemaConsulta.Entity.Consulta>? Consulta { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+        }
     }
 }

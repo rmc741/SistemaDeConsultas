@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using SistemaConsulta.Data;
 using SistemaConsulta.Repository;
 using SistemaConsulta.Repository.Interface;
@@ -13,7 +12,8 @@ namespace SistemaConsulta
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddEntityFrameworkSqlServer()
                 .AddDbContext<SistemaConsultaContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("SistemaConsultaContext") ?? throw new InvalidOperationException("Connection string 'SistemaConsultaContext' not found.")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("SistemaConsultaContext")
+                ?? throw new InvalidOperationException("Connection string 'SistemaConsultaContext' not found.")));
 
             // Add services to the container.
 
