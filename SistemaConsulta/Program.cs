@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SistemaConsulta.Data;
+using SistemaConsulta.Repository;
+using SistemaConsulta.Repository.Interface;
+
 namespace SistemaConsulta
 {
     public class Program
@@ -18,6 +21,7 @@ namespace SistemaConsulta
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
             var app = builder.Build();
 
