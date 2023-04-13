@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rafael\\source\\repos\\SistemaConsulta\\SistemaConsulta\\SistemaConsulta.csproj": {}
+    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\SistemaDeConsultas\\SistemaConsulta\\SistemaConsulta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rafael\\source\\repos\\SistemaConsulta\\SistemaConsulta\\SistemaConsulta.csproj": {
+    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\SistemaDeConsultas\\SistemaConsulta\\SistemaConsulta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\source\\repos\\SistemaConsulta\\SistemaConsulta\\SistemaConsulta.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\SistemaDeConsultas\\SistemaConsulta\\SistemaConsulta.csproj",
         "projectName": "SistemaConsulta",
-        "projectPath": "C:\\Users\\Rafael\\source\\repos\\SistemaConsulta\\SistemaConsulta\\SistemaConsulta.csproj",
+        "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\SistemaDeConsultas\\SistemaConsulta\\SistemaConsulta.csproj",
         "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\source\\repos\\SistemaConsulta\\SistemaConsulta\\obj\\",
+        "outputPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\SistemaDeConsultas\\SistemaConsulta\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/Idib/Idib/_packaging/InstitutoNuget/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -45,6 +46,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.15, )"
@@ -83,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

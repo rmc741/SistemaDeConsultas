@@ -8,7 +8,8 @@ namespace SistemaConsulta
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<SistemaConsultaContext>(options =>
+            builder.Services.AddEntityFrameworkSqlServer()
+                .AddDbContext<SistemaConsultaContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("SistemaConsultaContext") ?? throw new InvalidOperationException("Connection string 'SistemaConsultaContext' not found.")));
 
             // Add services to the container.
